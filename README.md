@@ -1,6 +1,9 @@
 jquery-polyline
 =======================================================================
-A jQuery UI widget for drawing polylines. Uses HTML5 canvas. __[Live demo](http://cyberic.github.io/jquery-polyline)__.
+A jQuery UI widget for drawing polylines. Uses HTML5 canvas. 
+
+* __[Live demo](http://cyberic.github.io/jquery-polyline)__.
+* __[Download](https://github.com/Cyberic/jquery-polyline/archive/master.zip)__.
 
 Requirements
 -----------------------------------------------------------------------
