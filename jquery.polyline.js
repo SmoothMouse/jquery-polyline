@@ -1,5 +1,13 @@
-(function( $, undefined ) {
+/*
+    jquery-polyline 1.0
+	
+	Copyright (c) 2013 Cyberic <http://cyberic.eu>
+    Written by Victor Novikov <https://github.com/Forkest>
+	Released under the MIT license <http://opensource.org/licenses/mit-license.php>
+*/
 
+(function( $, undefined ) {
+    
     "use strict";
 
     function round( a, b ) {
