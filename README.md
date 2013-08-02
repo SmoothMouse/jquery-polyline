@@ -4,8 +4,8 @@ A jQuery UI widget for drawing polylines. Uses HTML5 canvas. __[Live demo](http:
 
 Requirements
 -----------------------------------------------------------------------
-* jQuery (version 2.0 or higher is recommended).
-* jQuery UI (version 1.10 is recommended).
+* [jQuery](http://jquery.com/) (version 2.0 or higher is recommended).
+* [jQuery UI](http://jqueryui.com/) (version 1.10 is recommended).
 * A modern browser that supports HTML5 canvas.
 
 Usage
@@ -29,9 +29,9 @@ Please do __not__ include the script directly from GitHub.
 	
 4. Call the plugin from your `document.ready` call. Example with the default settings:
 ```
-$(document).ready(function() { 
-	$('#polyline').polyline();
-});
+	$(document).ready(function() { 
+		$('#polyline').polyline();
+	});
 ```
 
 Options
