@@ -174,10 +174,10 @@
                 ctx.font = this.options.stroke_text_font_style + " " + this.options.stroke_text_font_size + "px " + this.options.stroke_text_font_name;
 
                 for (var i = 0; i <= this.options.stroke_count; i++) {
-                    ctx.moveTo( i * max_y / this.options.stroke_count, this.options.stroke_shift );
-                    ctx.lineTo( i * max_y / this.options.stroke_count, this.options.stroke_shift - this.options.stroke_size );
-                    ctx.moveTo( this.options.stroke_shift, i * max_x / this.options.stroke_count );
-                    ctx.lineTo( this.options.stroke_shift - this.options.stroke_size, i * max_x / this.options.stroke_count );
+                    ctx.moveTo( i * max_x / this.options.stroke_count, this.options.stroke_shift );
+                    ctx.lineTo( i * max_x / this.options.stroke_count, this.options.stroke_shift - this.options.stroke_size );
+                    ctx.moveTo( this.options.stroke_shift, i * max_y / this.options.stroke_count );
+                    ctx.lineTo( this.options.stroke_shift - this.options.stroke_size, i * max_y / this.options.stroke_count );
                     var x = round( i * this.options.max_x / this.options.stroke_count , this.options.stroke_text_precision );
                     var y = round( i * this.options.max_y / this.options.stroke_count , this.options.stroke_text_precision );
                     ctx.scale(1,-1);
