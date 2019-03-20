@@ -7,20 +7,20 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script src="jquery.polyline.min.js"></script>
 <script>
-	$(document).ready(function() {		
-		$('#polyline').polyline({
-			'change': function(event, isnew, affected) {
-				var text = ((isnew === true) ? "Added" : (isnew === false) ? "Changed" : "Deleted") +
-							" dot #"+affected.index+" at ( "+affected.dot[0]+" ; "+affected.dot[1]+" )";
-				$('#last-event').text(text);
-			}
-		});
-	});
+    $(document).ready(function() {        
+        $('#polyline').polyline({
+            'change': function(event, isnew, affected) {
+                var text = ((isnew === true) ? "Added" : (isnew === false) ? "Changed" : "Deleted") +
+                            " dot #"+affected.index+" at ( "+affected.dot[0]+" ; "+affected.dot[1]+" )";
+                $('#last-event').text(text);
+            }
+        });
+    });
 </script>
 </head>
 <body>
-	<h1><a href="https://github.com/Cyberic/jquery-polyline">jquery-polyline</a> &mdash; a jQuery UI widget for drawing polylines</h1>
-	<canvas width="420" height="420" id="polyline" style="box-shadow: 0 0 2px 2px #aaa;">Your browser does not support HTML5 Canvas.</canvas>
-	<div id="last-event"><i>Double-click to add a dot; double-click on a dot to remove it.</i></div>
+    <h1><a href="https://github.com/SmoothMouse/jquery-polyline">jquery-polyline</a> &mdash; a jQuery UI widget for drawing polylines</h1>
+    <canvas width="420" height="420" id="polyline" style="box-shadow: 0 0 2px 2px #aaa;">Your browser does not support HTML5 Canvas.</canvas>
+    <div id="last-event"><i>Double-click to add a dot; double-click on a dot to remove it.</i></div>
 </body>
 </html>
